@@ -68,3 +68,18 @@ a.close-btn:hover{
 .movie-detail-title{
     color: red;
 }
+
+
+@media (max-width: 768px) {
+.movie-content {
+    width: 70%;
+    background-color: #000000e0;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+}

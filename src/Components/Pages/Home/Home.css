@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100%;
 }
+
 .movie-detail {
     position: absolute;
     bottom: 10%;
@@ -12,11 +13,12 @@
     flex-direction: column;
     gap: 1rem;
     text-align: left;
-    background-color:#0000009e;
+    background-color: #0000009e;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(82, 81, 81, 0.37);
 }
+
 .poster-overlay {
     position: absolute;
     top: 0;
@@ -25,17 +27,21 @@
     height: 100%;
     width: 100%;
 }
+
 .movie-title h1 {
     font-size: 4rem;
     color: #fff;
 }
+
 .movie-date {
     color: #fff;
 }
+
 span.releasedOn {
     color: #f5c518;
     font-size: 1.2rem;
 }
+
 .movie-description {
     line-height: 2rem;
     font-weight: lighter;
@@ -51,6 +57,50 @@ span.releasedOn {
     font-size: 1.2rem;
     color: white;
 }
+
 .vote svg {
     color: #ff6c03;
+}
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .movie-detail {
+        width: 90%;
+        bottom: 0%;
+        left: 0;
+        padding: 10px;
+        background: none;
+        box-shadow: none;
+        padding: 0px 30px 30px;
+        height: fit-content;
+    }
+
+    .movie-title h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .movie-description {
+        line-height: 1.5rem;
+        font-weight: lighter;
+        font-style: italic;
+        font-size: 1rem;
+        color: #e3e3e3;
+    }
+}
+
+/* For screens between 769px and 1024px (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .movie-detail {
+        width: 80%;
+        /* Adjust as needed */
+    }
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+    .movie-detail {
+        width: 60%;
+        /* Adjust as needed */
+    }
 }
