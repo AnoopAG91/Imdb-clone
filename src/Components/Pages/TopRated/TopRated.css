@@ -57,3 +57,13 @@ span.popular-overlay-title {
 .overlay-content p {
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    .popular{
+        width: 100%;
+    }
+    .popular-wrapper h1 {
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
+}
